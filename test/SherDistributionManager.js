@@ -180,4 +180,20 @@ describe('SherDistributionManager, 6 dec', function () {
       expect(await this.erc20.balanceOf(this.bob.address)).to.eq(this.balance);
     });
   });
+
+  describe('Output', function () {
+    before(async function () {
+      await timeTraveler.revertSnapshot();
+    });
+
+    it('Addresses', async function () {
+      console.log('sdm owner:',await this.sdm.owner());
+      console.log('sdm:',this.sdm.address);
+      console.log('sherlock core:',this.sherlock.address);
+      console.log('alice:',this.alice.address);
+      console.log('bob:',this.bob.address);
+      console.log('carol:',this.carol.address);
+      console.log('gov:',this.gov.address);
+    });
+  });
 });
