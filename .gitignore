@@ -9,4 +9,9 @@ coverage/
 coverage.json
 yarn.lock
 
+.vscode/
+package-lock.json
+
+yarn.lock
+
 #₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿
